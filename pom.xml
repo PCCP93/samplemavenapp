@@ -83,8 +83,8 @@
 </properties>
   <distributionManagement>
     <snapshotRepository>
-      <id>maven-snapshots</id>
-      <url>http://localhost:9090/repository/maven-snapshots//</url>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:9090/repository/nexus-snapshots//</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
