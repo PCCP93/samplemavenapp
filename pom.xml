@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.${buildNumber}-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>http://localhost:9090/repository/maven-central/</url>
   <dependencies>
@@ -85,6 +85,7 @@
         </configuration>
       </plugin> 
     </plugins>
+    <finalName>${project.artifactId}.${buildNumber}.${project.version}</finalName>
   </build>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
