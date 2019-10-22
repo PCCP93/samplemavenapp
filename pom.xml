@@ -6,7 +6,9 @@
   <packaging>jar</packaging>
   <version>1.0</version>
   <properties>
-  <release.identifier>SNAPSHOT</release.identifier>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <release.identifier>SNAPSHOT</release.identifier>
   </properties>
   <name>my-app</name>
   <url>http://localhost:9090/repository/maven-central/</url>
@@ -67,10 +69,6 @@
     </plugins>
     <finalName>${project.artifactId}.${project.version}.${buildNumber}-${release.identifier}</finalName>
   </build>
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
   <distributionManagement>
   <repository>
      <id>maven-releases</id>
