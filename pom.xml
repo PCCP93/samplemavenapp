@@ -5,7 +5,9 @@
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <releaseidentifier>SNAPSHOT</releaseidentifier>
+  <properties>
+  <release.identifier>SNAPSHOT</release.identifier>
+  </properties>
   <name>my-app</name>
   <url>http://localhost:9090/repository/maven-central/</url>
   <dependencies>
@@ -63,7 +65,7 @@
         </configuration>
       </plugin> 
     </plugins>
-    <finalName>${project.artifactId}.${project.version}.${buildNumber}-${project.releaseidentifier}</finalName>
+    <finalName>${project.artifactId}.${project.version}.${buildNumber}-${release.identifier}</finalName>
   </build>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
